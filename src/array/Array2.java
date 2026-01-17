@@ -35,7 +35,12 @@ public class Array2
         
         // easiest way : Arrays.toString(A)
         
-        System.out.println(Arrays.toString(A));  // only for 1-D array
+        System.out.println(java.util.Arrays.toString(A));
+        /*
+        If a class name in the same package matches an imported class,
+        Java gives priority to the local class, which can cause name conflicts.
+        */
+
         
         
     }

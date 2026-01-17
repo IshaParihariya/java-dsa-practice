@@ -9,7 +9,11 @@ public class PassingInFunctions
     public static void main( String[] args)
     {
         int[] nums={1,2,3,4,5,6,7,8,9};
-        System.out.println(Arrays.toString(nums));
+        System.out.println(java.util.Arrays.toString(nums));
+        /*
+        If a class name in the same package matches an imported class,
+        Java gives priority to the local class, which can cause name conflicts.
+        */
         
         
         change(nums);

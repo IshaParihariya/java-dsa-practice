@@ -63,7 +63,11 @@ public class TwoDArrays
             }
            
         }
-        System.out.print(Arrays.deepToString(arr));  // for multi-dimensional array
+        System.out.print(java.util.Arrays.deepToString(arr));  // for multi-dimensional array
+        /*
+        If a class name in the same package matches an imported class,
+        Java gives priority to the local class, which can cause name conflicts.
+        */
         System.out.println();
             }
     
