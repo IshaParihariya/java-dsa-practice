@@ -15,6 +15,7 @@ SELECTION SORT :
 * Performs good for small lists or small arrays
 
 */
+// ascending order sort :
 package sorting;
 
 import java.util.*;
@@ -35,6 +36,12 @@ public class SelectionSort
     
     static void selectionSort(int arr[])
     {
-        
+        for(int i=0;i<arr.length;i++) //ith pass
+        {
+           for(int j;j<arr.length-1;j++)
+           {
+               
+           }
+        }
     }
 }

@@ -56,9 +56,15 @@ public class BubbleSort
         */
         boolean swapped;
        for (int i=0;i<arr.length;i++)  // i th pass 
+           /*
+           After n-1 passes, the array is sorted
+
+We still write arr.length for simplicity & safety
+           */
        {
            swapped=false;
-           for(int j=1;j<arr.length-i;j++)  /*
+           for(int j=1;j<arr.length-i-1;j++) 
+               /*
                                    j<n-i-1 (this because j will not visit the already sorted part anymore)
                                             */
            {
