@@ -38,7 +38,7 @@ public class SelectionSort
     {
         for(int i=0;i<arr.length;i++) //ith pass
         {
-           for(int j;j<arr.length-1;j++)
+           for(int j = 0;j<arr.length-1;j++)
            {
                
            }
