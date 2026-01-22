@@ -28,6 +28,7 @@ public class Queue_ArrayDeque
         dq.offer(30);
         //printing the Queue
         System.out.println(dq);      // [10, 20, 30]
+        // poll is like pop deleting the element 
         System.out.println(dq.poll()); // 10
         
         //Using ArrayDeque as a Stack (LIFO)
