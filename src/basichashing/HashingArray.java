@@ -57,8 +57,29 @@ package basichashing;
 public class HashingArray
 {
     public static void main(String[] args)
-    {
-        int arr[]=new int['a']; // array needs a int index but as ive given character over here so it will
+{
+//        int arr[]=new int['a']; // array needs a int index but as ive given character over here so it will
                                 // convert it to its ASCII value and will take it as the int in it 
+    
+    
+    int[] arr = {3, 1, 2, 3, 2};
+
+        int[] hash = new int[4]; // max value = 3 → size = 4
+
+        for (int x : arr) {
+            hash[x]++; //go to index = x
+                       //increase value by 1
+            // hash[3]++ → 1
+          // hash[1]++ → 1
+          //hash[2]++ → 1
+          //hash[3]++ → 2
+          //hash[2]++ → 2
+        }
+
+        for (int i = 0; i < hash.length; i++) {
+            if (hash[i] > 0) {
+                System.out.println(i + " -> " + hash[i]);
+            }
     }
+}
 }
