@@ -1,7 +1,7 @@
 
 package basichashing;
 
-public class HaashingArray3 
+public class HashingArray3 
 {
     public static void main(String[] args)
     {

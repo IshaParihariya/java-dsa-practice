@@ -48,8 +48,10 @@ Key Idea:
 - Direct indexing gives O(1) access
 
 This is called ARRAY HASHING.
-Used when maximum value is small (≤ 10^6).
-
+Used when maximum value in the array is small (≤ 10^6).
+for greater than this use HashMap and TreeMap 
+hash map for not sorted but larger range (> 10^6)
+and tree map for sorted and larger range like mobile numbers and IDs
 
 */
 package basichashing;

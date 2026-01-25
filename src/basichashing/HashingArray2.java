@@ -15,7 +15,7 @@ public class HashingArray2
         }
          for(int i=0;i<=h.length-1;i++)
         {
-            if(h[i]>0)
+           if(h[i]>0)
            System.out.println((char)(i+'a')+" -> "+h[i]);
         }
     }
