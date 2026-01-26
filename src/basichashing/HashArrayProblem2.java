@@ -36,7 +36,7 @@ public class HashArrayProblem2
             }
         }
         
-        int max2=freq[0]; // secound largest element freuency
+        int max2=freq[0]; // secound largest element frequency
         for(i=0;i<freq.length;i++)
         {
            if(max1>freq[i]&&max2<freq[i])
