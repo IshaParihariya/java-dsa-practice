@@ -25,6 +25,8 @@ it n bcuz we only need a relationship
 - In bubble sort comaprison is done and i is the pass
 so for each pass j=0 ; j<n-i-1 (this because j will not visit the already sorted part anymore)
 */
+
+// ascedning order
 package sorting;
 
 import java.util.*;
@@ -48,47 +50,30 @@ public class BubbleSort
 
     }
     
+    // method for Bubble Sort 
     static void bubbleSort(int arr[])
     {
-        /*
-        If no swap occurs in a pass, the array is already sorted
-        Then Bubble Sort stops early, possibly in fewer than n − 1 passe
-        */
-        boolean swapped;
-       for (int i=0;i<arr.length;i++)  // i th pass 
-           /*
-           After n-1 passes, the array is sorted
-
-We still write arr.length for simplicity & safety
-           */
-       {
-           swapped=false;
-           for(int j=1;j<arr.length-i-1;j++) 
-               /*
-                                   j<n-i-1 (this because j will not visit the already sorted part anymore)
-                                            */
+        int n=arr.length;
+        for(int i=0;i<=n-1;i++) // ith pass from 0 to length-1
+        {
+          boolean swapped=false;
+           for(int j=0;j<n-i-1;j++)
            {
-              if(arr[j]<arr[j-1]) // Ascending order
-              {
-                  int temp=arr[j];
-                  arr[j]=arr[j-1];
-                  arr[j-1]=temp;
-                  swapped = true;
-              }
+               if(arr[j]>arr[j+1])
+               {
+                   // swapping will be done each time not only once 
+                   int temp=arr[j];
+                   arr[j]=arr[j+1];
+                   arr[j+1]=temp;
+                   swapped= true;
+               }
            }
-           /*
-           Sometimes, the array is already sorted before completing all passes.
-           So instead of wasting time doing useless passes, we use a flag variable called swapped.
-           !swapped means swapped == false
-           That means:
-           -No swap occurred in the entire pass
-           -The array is already sorted
-           -So we stop the algorithm early using break
-           */
+           //If no swap occurs in a pass, it means the array is already sorted, so we terminate early**
            if(!swapped)
            {
                break;
            }
-       }
+        }
+       
     }
 }
