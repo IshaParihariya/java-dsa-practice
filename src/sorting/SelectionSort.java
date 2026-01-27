@@ -15,6 +15,8 @@ SELECTION SORT :
 * Performs good for small lists or small arrays
 
 */
+
+
 // ascending order sort :
 package sorting;
 
@@ -36,12 +38,22 @@ public class SelectionSort
     
     static void selectionSort(int arr[])
     {
-        for(int i=0;i<arr.length;i++) //ith pass
+        
+        for(int i=0;i<=arr.length-1;i++) //ith pass
         {
-           for(int j = 0;j<arr.length-1;j++)
+            int min=i; // in Selection Sort index is passed
+           for(int j=i;j<arr.length;j++) // j starts from i so now the traversing wont be in sorted array anymore
            {
-               
+              if(arr[min]>arr[j])
+              {
+                 min=j;                 
+              }
            }
+           // swap only once per pass
+        int temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
         }
+ 
     }
 }
