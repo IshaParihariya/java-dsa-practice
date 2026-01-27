@@ -40,51 +40,49 @@ package basichashing;
 
 public class HashArrayProblem4 
 {
-    public static void Hashing(int arr[])
+    public static void method(int n[])
     {
-        // find max element
-        int max = arr[0];
-        for(int i = 0; i < arr.length; i++)
+      // maximum element in the n array
+        int max =n[0];
+        for(int i=0;i<n.length;i++)
         {
-            if(arr[i] > max)
-                max = arr[i];
+            if(max<n[i])
+            {
+                max=n[i];
+            }
         }
-
-        // frequency array
-        int freq[] = new int[max + 1];
-
-        // count frequency
-        for(int x : arr)
+      // size = max elememt + 1
+         int size=max+1;
+     // array for frequency
+        int freq[]=new int[size];
+        // for frequency count 
+        for(int x:n) // for each loop
         {
             freq[x]++;
         }
-
-        // print element-frequency pairs
-        System.out.println("Element  Frequency");
-
-        for(int i = 0; i < arr.length; i++)
+        
+        // for printing except the duplicate values
+        for(int i=0;i<n.length;i++)
         {
-            boolean isDuplicate = false;
-
-            // check if already printed
-            for(int j = 0; j < i; j++)
+            boolean isDuplicate=false;
+            for(int j=0;j<i;j++)
+            {    
+            if(n[i]==n[j])
             {
-                if(arr[i] == arr[j])
-                {
-                    isDuplicate = true;
-                    break;
-                }
+              isDuplicate=true; 
+              break;
             }
-
-            if(!isDuplicate)
+            }
+            if(!isDuplicate) // if not duplicate then print
             {
-                System.out.println(arr[i] + "        " + freq[arr[i]]);
+               System.out.println(n[i]+ "            "+ freq[n[i]]); 
+               
             }
         }
     }
-
     public static void main(String[] args)
     {
-        Hashing(new int[]{1,2,3,1,4,5,6,7,2,3,2,3,3,4});
+        System.out.println("value"+"      "+"frequency");
+       method(new int[]{1,2,3,1,1,2,3,4,5,5,6,7}); 
     }
 }
