@@ -1,5 +1,8 @@
-/*
-Given an integer array nums sorted in non-decreasing order, remove all duplicates in-place so that each unique element appears only once.
+/* 
+// will look for an another solution 
+
+Given an integer array nums sorted in non-decreasing order, remove all duplicates in-place so that
+each unique element appears only once.
 
 
 
@@ -47,7 +50,27 @@ class RemoveDuplicates_
 {
     public void  removeDuplicates_(int[] arr)
     {
+        // increasing order sorted array
+        // in place modification
         
+        int n=arr.length;//length of the arr
+        if(n == 0)
+    {
+        System.out.println("Number of unique elements : 0");
+    }
+        
+        int count=1;
+        System.out.print(arr[0]+" ");
+        for(int i=0;i<=n-2;i++) // k , for getting the count of unique elements
+        {
+            if(arr[i]<arr[i+1])
+            {
+                System.out.print(arr[i+1]+"  ");
+                count++;
+            }
+        }
+        System.out.println();
+        System.out.println("Number of unique elements : "+count);    
     }
 }
 public class RemoveDuplicates 
@@ -55,6 +78,6 @@ public class RemoveDuplicates
     public static void main(String[] args)
     {
         RemoveDuplicates_ rd=new RemoveDuplicates_();
-        rd.removeDuplicates_(new int[]{6,6,6,6,6,6});
+        rd.removeDuplicates_(new int[]{-5,-1,0,1,2,3,4,5,5,6,6,6,7});
     }
 }
