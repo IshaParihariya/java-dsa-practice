@@ -27,7 +27,7 @@ Explanation:
 
 There is no sub-array in the array that sums to 6. Therefore, the output is 0.
 */
-package array.questions.easy.medium;
+package array.questions.medium;
 
 class Solution
 {
@@ -53,10 +53,10 @@ class Solution
            {
                count=0;
                sum=0;
-               i--; // again loop
+               i--; // again loop not ending
               continue; // skip the iteration and go to the next element
            }
-           if(sum==k && temp!=sum)//loop here
+           if(sum==k && temp!=sum)//loop here not ending
            {                 
                count=0;
                sum=0;

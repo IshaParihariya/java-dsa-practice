@@ -20,7 +20,7 @@ Output : 5
 
 Explanation : The integer 5 has appeared only once.
 */
-package array.questions.easy.medium;
+package array.questions.medium;
 
 class Singleno
 {
