@@ -29,11 +29,43 @@ Input: arr = [3, 8, 1, 4, 6, 2]
 
 */
 package array.questions.medium;
+/*
+arr[i] : price 
+i th : day 
+max profit acheivable
+*/
 
-/**
- *
- * @author ishh1
- */
-public class StockBuyAndSell {
-    
+class Stockbuyandsell_
+{
+    public void stockbuysell(int[] arr)
+    {
+        int max=0;
+        int temp=0;
+       for(int i=0;i<arr.length;i++)
+       {
+           for(int j=0;j<arr.length;j++)
+           {
+               if(arr[j]>arr.length-1)
+               {
+                   break;
+               }
+               max=arr[arr[j]]-arr[j];  
+           }
+           if(max<temp)
+               {
+                   max=temp;
+               }
+           temp=max;
+           max=0;
+       }
+       System.out.println(max);
+    }
+}
+public class StockBuyAndSell 
+{
+    public static void main(String[] args)
+    {
+        Stockbuyandsell_ s=new Stockbuyandsell_();
+        s.stockbuysell(new int[]{10, 7, 5, 8, 11, 9});
+    }
 }

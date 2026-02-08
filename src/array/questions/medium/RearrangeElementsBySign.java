@@ -1,7 +1,8 @@
 /*
  Rearrange array elements by sign
 
-Given an integer array nums of even length consisting of an equal number of positive and negative integers.Return the answer array in such a way that the given conditions are met:
+Given an integer array nums of even length consisting of an equal number of positive and negative integers.
+Return the answer array in such a way that the given conditions are met:
 
 Every consecutive pair of integers have opposite signs.
 
@@ -33,10 +34,7 @@ The positive number 1, 2, 3 maintain their relative positions and -1, -3, -4 mai
 */
 package array.questions.medium;
 
-/**
- *
- * @author ishh1
- */
-public class RearrangeElementsBySign {
+public class RearrangeElementsBySign 
+{
     
 }

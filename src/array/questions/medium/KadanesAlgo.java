@@ -1,5 +1,4 @@
 /*
-THIS IS NOT KADANE ITS A BETTER SOLUTION 0(N^2)
 Kadane's Algorithm
 
 Given an integer array nums, find the subarray with the largest sum and return the sum of the elements present in that subarray.
@@ -27,37 +26,20 @@ Explanation:
 
 The element on index 0 or index 3 make up the largest sum when taken as a subarray
 */
+
 package array.questions.medium;
 
 class KadaneAlgo
 {
     public void kadane(int[] arr)
     {
-        int sum=0;
-        int max=arr[0];
-        // for going thorugh each subarray 
-        for(int i=0;i<arr.length;i++)
-        {
-            sum=0;
-             for(int j=i;j<arr.length;j++)
-             {
-                     sum=sum+arr[j];
-                     if(max<sum)
-                     {
-                         max=sum;
-                     }
-                 
-             }
-             
-        }
-        System.out.println(max);
+        
     }
 }
-public class KadaneAlgorithm_
+public class KadanesAlgo 
 {
     public static void main(String[] args)
     {
-        KadaneAlgo ka=new KadaneAlgo();
-        ka.kadane(new int[]{2, 3, 5, -2, 7, -4});
+        
     }
 }
