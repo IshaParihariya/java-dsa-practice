@@ -27,7 +27,7 @@ Explanation:
 
 Index 3 is the smallest index such that arr[3] > x.
 */
-package binarySearchAlgorithm.queations;
+package binarySearchAlgorithm.queations.easy;
 
 class UpperBound_
 {

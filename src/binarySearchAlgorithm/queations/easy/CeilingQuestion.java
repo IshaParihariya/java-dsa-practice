@@ -16,7 +16,7 @@ One-line rule : **
 After binary search ends, start points to the ceiling element
 start points to ceiling only when the ceiling exists in a sorted array using correct binary search logic.***
 */
-package binarySearchAlgorithm.queations;
+package binarySearchAlgorithm.queations.easy;
 
 import java.util.*;
 

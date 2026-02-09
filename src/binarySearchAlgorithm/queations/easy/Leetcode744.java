@@ -5,7 +5,7 @@ https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 
 check later again 
 */
-package binarySearchAlgorithm.queations;
+package binarySearchAlgorithm.queations.easy;
 
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) 

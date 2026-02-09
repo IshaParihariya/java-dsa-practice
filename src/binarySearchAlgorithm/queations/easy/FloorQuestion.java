@@ -14,7 +14,7 @@ Ceiling → return start
 
 
 
-package binarySearchAlgorithm.queations;
+package binarySearchAlgorithm.queations.easy;
 
 import java.util.*;
 public class FloorQuestion 

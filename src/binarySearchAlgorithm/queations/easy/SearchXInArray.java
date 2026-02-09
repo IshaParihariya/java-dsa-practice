@@ -20,7 +20,7 @@ Output: -1
 
 Explanation: The target integer 2 does not exist in nums so return -1
 */
-package binarySearchAlgorithm.queations;
+package binarySearchAlgorithm.queations.easy;
 import java.util.*;
 import java.util.Arrays;
 

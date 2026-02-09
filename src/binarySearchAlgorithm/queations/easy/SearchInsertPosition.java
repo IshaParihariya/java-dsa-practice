@@ -20,7 +20,7 @@ Output: 1
 
 Explanation: The target value 2 is not found in the array. However, it should be inserted at index 1 to maintain the sorted order of the array.
 */
-package binarySearchAlgorithm.queations;
+package binarySearchAlgorithm.queations.easy;
 
 class SearchInsertPosition_
 {
@@ -28,8 +28,7 @@ class SearchInsertPosition_
     {
         int start=0;
         int end=arr.length-1;
-        int mid=0;
-        int ans=start;
+        int mid;
         
         // while loop
         while(start<=end)
@@ -46,11 +45,14 @@ class SearchInsertPosition_
             }
             if(arr[mid]<target)
             {
-                ans=mid;
                 start=mid+1;
             }
         }
-      return ans;  
+      return start;
+      /*
+      For Search Insert Position, the best rule is:
+      When loop ends, start itself is the correct insert position.
+      */ 
     }
 }
 public class SearchInsertPosition
@@ -58,7 +60,7 @@ public class SearchInsertPosition
     public static void main(String[] args)
     {
     SearchInsertPosition_ s=new SearchInsertPosition_();
-    int ans=s.searchinsertposition(new int[]{1, 3, 5, 6},5);
-    
+    int ans=s.searchinsertposition(new int[]{1, 3, 5, 8,7,10,11,15,19},6);
+    System.out.println(ans);
     }
 }
