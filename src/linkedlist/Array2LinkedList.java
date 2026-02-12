@@ -15,7 +15,7 @@ class ArrayToLL
                    mover.next=temp;
                    mover=temp;
                }
-               return head;
+               return head; // will return head node
            }
 }
 public class Array2LinkedList
