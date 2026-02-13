@@ -6,7 +6,7 @@ so we take seld-defined data type
 Struct but as struct cannot have the oops concepts 
 so instead we take class as a self-defined data 
 */
-package linkedlist;
+package linkedlist.basics;
 
 // self-defined data 
 class Node
@@ -28,6 +28,8 @@ class Node
         this.next=null; // null so end here 
     }
 }
+
+
 public class LinkedList
 {
     public static void main(String[] args)

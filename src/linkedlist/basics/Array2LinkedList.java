@@ -1,7 +1,22 @@
 /*
 converting an array to a linked list
 */
-package linkedlist;
+package linkedlist.basics;
+
+
+// Node class should be created differently *
+class Node
+{
+    
+    int data; // data 
+    Node next; // address of next data
+     // Constructor
+    Node(int data)
+    {
+        this.data = data;
+        this.next = null;
+    }
+}
 
 class ArrayToLL
 {
@@ -18,6 +33,7 @@ class ArrayToLL
                return head; // will return head node
            }
 }
+
 public class Array2LinkedList
 {
    public static void main(String[] args)

@@ -2,7 +2,7 @@
 traversing in linked list 
 NOTE : NEVER EVER tamper the head dont ever change it 
 */
-package linkedlist;
+package linkedlist.basics;
 
 class TraversingInLinkedList
 {
@@ -27,7 +27,7 @@ It holds the node object, which already has both inside.
         */
         
         // while loop
-        while(temp != null)
+        while(temp != null) //“Run while current node exists.”
         {
             System.out.print(temp.data+" -> ");
             temp=temp.next;
