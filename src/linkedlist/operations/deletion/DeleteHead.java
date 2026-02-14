@@ -24,6 +24,12 @@ class Delete
 {
     public Node delete(Node head,int delete)
     {   
+        // if length of LL is 1 then deleting would lead to no LL at all so no deletion there
+        // if length of the LL is 0 then return null
+        if(head.next==null||head==null)
+        {
+         return null;   
+        }
         //position
         int count=1;
         
