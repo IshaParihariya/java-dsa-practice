@@ -40,7 +40,7 @@ public class Array2LinkedList
    {
       int arr[]={1,2,3,4};
        ArrayToLL a=new ArrayToLL();
-       Node n=a.array2ll(arr); // retuens Node*
+       Node n=a.array2ll(arr); // returns Node*
        System.out.println(n.data);
    }
 }
