@@ -16,6 +16,13 @@ class Node
         this.next=null;
         this.back=null;
     }
+    
+    Node(int data,Node next,Node back)
+    {
+        this.data=data;
+        this.next=next;
+        this.back=back;
+    }
 }
 
 class Array2DLL
