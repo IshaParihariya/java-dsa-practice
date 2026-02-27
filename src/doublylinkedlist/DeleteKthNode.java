@@ -90,6 +90,72 @@ class DeleteKthelement
         return head;
     }
 }
+
+// 2nd way
+
+class Delete
+{
+    public Node delete(Node head,int K)
+    {
+        // if null DLL
+        if(head==null)
+            return null;
+        
+        // for other cases
+        int count=0;
+        Node KNode=head;
+        boolean found=false;
+        while(KNode!=null)
+        {
+            count++;
+            if(count==K)
+            {
+                found=true;
+                break;
+            }
+            
+            KNode=KNode.next;
+        }
+        if(found==false)
+        {
+            System.out.println("this Node doesnt exist");
+            return head;
+        }
+            
+        
+        Node previous=KNode.prev;
+        Node next=KNode.next;
+        
+        // for deletion of head
+        if(previous==null)
+        {
+            Node temp = head;
+    head = head.next;
+
+    if(head!=null)
+        head.prev=null;
+
+    temp.next=null;
+
+    return head;
+        }
+        // for deletion of tail
+        if(next==null)
+        {
+            previous.next=null;
+            KNode.prev=null;
+            return head;
+        }
+        // for the Kth Node
+        if(previous!=null && next!=null)
+        {
+           previous.next=next;
+           next.prev=previous;
+           return head;
+        }
+        return head;
+    }
+}
 public class DeleteKthNode 
 {
     public static void main(String[] args)
@@ -131,5 +197,7 @@ public class DeleteKthNode
            temp=temp.next;
        }
        System.out.println("NULL");
+       
+       
     }
 }
