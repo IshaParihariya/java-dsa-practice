@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ishh1/OneDrive/Documents/NetBeansProjects/DataStructureAndAlgo/src/doublylinkedlist/DeleteHeadDLL.java</file>
-            <file>file:/C:/Users/ishh1/OneDrive/Documents/NetBeansProjects/DataStructureAndAlgo/src/doublylinkedlist/DeleteKthNode.java</file>
+            <file>file:/C:/Users/ishh1/OneDrive/Documents/NetBeansProjects/DataStructureAndAlgo/src/doublylinkedlist/ArrayToDLL.java</file>
+            <file>file:/C:/Users/ishh1/OneDrive/Documents/NetBeansProjects/DataStructureAndAlgo/src/doublylinkedlist/InsertionBeforeTail.java</file>
+            <file>file:/C:/Users/ishh1/OneDrive/Documents/NetBeansProjects/DataStructureAndAlgo/src/doublylinkedlist/InsertionBeforeHead.java</file>
+            <file>file:/C:/Users/ishh1/OneDrive/Documents/NetBeansProjects/DataStructureAndAlgo/src/doublylinkedlist/InsertionBeforeKthNode.java</file>
         </group>
     </open-files>
 </project-private>
