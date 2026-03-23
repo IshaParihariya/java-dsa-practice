@@ -1,9 +1,0 @@
-# NetBeans
-nbproject/private/
-
-# Build files
-build/
-dist/
-
-# Compiled files
-*.class 
