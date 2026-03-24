@@ -68,7 +68,7 @@ class QueueUsingArray
     // offer or add
     int queue[] =new int[10];
     
-    int front=-1; // top
+    int front=-1; // tfront
     
     int rear=-1; // rear
     
