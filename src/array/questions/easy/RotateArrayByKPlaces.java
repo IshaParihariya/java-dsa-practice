@@ -51,7 +51,6 @@ class RotateByKPlaces_ // class
         int n=arr.length;// length of the array
         for(int i=0;i<k;i++) // rotate for k times
         {
-            
             int temp=arr[0];
             for(int j=0;j<=n-2;j++)
             {
@@ -64,11 +63,38 @@ class RotateByKPlaces_ // class
         System.out.println("The rotated array for "+ k +" times : "+Arrays.toString(arr));
     }
 }
+
+class array
+{
+    public void rotate(int[] arr,int k)
+    {
+         k=k-1;
+        int n=arr.length; 
+        int[] temp=new int[arr.length];
+       for(int i=0;i<n;i++)
+       {  
+           if(i<k)
+           {
+               temp[i]=arr[n-k+i];
+               arr[n-k+i]=arr[i];
+           }
+           else
+           {
+               temp[i]=arr[i-k];
+               arr[i-k]=arr[i];
+           }
+       }
+       System.out.println("rotated temp array :"+Arrays.toString(temp));
+    }
+}
 public class RotateArrayByKPlaces
 {
     public static void main(String[] args)
     {
-        RotateByKPlaces_ rp=new RotateByKPlaces_();
-        rp.rotateByKPlaces(new int[]{1, 2, 3, 4, 5, 6}, 2);
+        //RotateByKPlaces_ rp=new RotateByKPlaces_();
+        //rp.rotateByKPlaces(new int[]{1, 2, 3, 4, 5, 6}, 2);
+        
+        array a=new array();
+        a.rotate(new int[]{1, 2, 3, 4, 5, 6}, 2);
     }
 }
