@@ -1,4 +1,6 @@
 // stack using Linked List
+
+// -> as Array has a fixed size so we using LL also better space complexity as takes only needed space 
 package stack_queue.intro;
 
 // class Node
