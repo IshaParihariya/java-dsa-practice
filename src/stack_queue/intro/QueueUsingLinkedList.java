@@ -30,6 +30,7 @@ package stack_queue.intro;
         end=temp;
        
         size++;
+     
      }
      
      // poll
@@ -79,7 +80,9 @@ public class QueueUsingLinkedList
           System.out.print("\n");
         
           // poll
-          obj.poll();
+          
+          Node removed=obj.poll();
+          System.out.println("removed Node :"+removed);
            Node head1=obj.start;
         // print
          Node temp=head1;
