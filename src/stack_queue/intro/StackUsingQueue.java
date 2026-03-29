@@ -20,6 +20,9 @@ class ImplementStackWithQueue
 {
     Queue<Integer> q=new LinkedList<>();
     int size=0;
+    
+    // push 
+    // push operations do not return anything 
    public void push(int value)
    {
        // start
@@ -27,7 +30,6 @@ class ImplementStackWithQueue
        {
           q.offer(value);
           size++;
-          return;
        }
        // if size>=1
       /*
@@ -43,6 +45,8 @@ class ImplementStackWithQueue
       
     
       // for loop 
+      else
+       {
       q.offer(value); 
       for(int i=0;i<size;i++)
       {
@@ -50,17 +54,34 @@ class ImplementStackWithQueue
          
       }
       size++;
-      
-   }   
+       }
+       
+     // return q; // returning this queue that we made act like a stack for pop operations 
+   } 
+   
+   // pop 
+   public Integer pop()
+   {
+       Integer removed=q.poll();
+       return removed;
+   }
 }
 public class StackUsingQueue 
 {
     public static void main(String[] args)
     {
         ImplementStackWithQueue stack=new ImplementStackWithQueue();
-        stack.push(1);
+        // push
+       stack.push(1);
+        System.out.println(stack.q);
         stack.push(2);
-        stack.push(3);
+         System.out.println(stack.q);
+       stack.push(3);
+         System.out.println(stack.q);
         stack.push(4);
+         System.out.println(stack.q);
+        // pop
+        Integer r=stack.pop();
+        System.out.println("removed : "+r);
     }
 }
