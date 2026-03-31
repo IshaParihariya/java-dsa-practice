@@ -44,10 +44,35 @@ Explanation:
 */
 package array.questions.medium;
 
-/**
- *
- * @author ishh1
- */
-public class NextPermutation {
-    
+
+class Solution
+{
+    public void sol(int[] arr)
+    {
+        int fixed=arr[0]; 
+        for(int i=0;i<arr.length;i++)
+        {
+            // keep ith element fixed
+            
+            fixed=arr[i];
+            arr[0]=arr[i];
+            
+            // for the swapping of tthe elemenths other than the fixed one
+            for(int j=0;j<arr.length;j++)
+            {
+                // swapping 
+                for(int k=0;k<arr.length;k++)
+                {
+                    
+                }
+            }
+        }
+    }
+}
+public class NextPermutation
+{
+    public static void main(String[] args)
+    {
+        
+    }
 }

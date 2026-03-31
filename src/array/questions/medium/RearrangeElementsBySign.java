@@ -34,7 +34,55 @@ The positive number 1, 2, 3 maintain their relative positions and -1, -3, -4 mai
 */
 package array.questions.medium;
 
+import java.util.Arrays;
+
+
+class RearrangeElementsBySign1
+{
+    public int[] rearrangeElementsBySign(int[] arr)
+    {
+        // positive elements stored in this array
+        int[] p=new int[arr.length/2];
+        //-ve elements stored in this array
+        int[] n=new int[arr.length/2];
+        
+        for(int i=0,j=0,k=0;i<arr.length&&j<p.length&&k<n.length;i++,j++,k++)
+        {
+            if(arr[i]>=0)// +ve // cpmsiderimg 0 as a +ve element
+            {
+                p[j]=arr[i];
+            }
+             if(arr[i]<0)// -ve
+            {
+                n[k]=arr[i];
+            }
+             
+        }
+        
+        // for loop 
+        // storing elements in the arr 
+        // if i%2==0 => store an element from p array 
+        // else from n array
+        for(int i=0,j=0;i<arr.length&&j<p.length;i++,j++)
+        {
+            if(i%2==0||i==0)
+            {
+                arr[i]=p[j];
+                j=j-1;
+            }
+            else
+            {
+                arr[i]=n[j];
+            }
+        }return arr;
+    }
+}
 public class RearrangeElementsBySign 
 {
-    
+    public static void main(String[] args)
+    {
+        RearrangeElementsBySign1 p=new RearrangeElementsBySign1();
+        int[] newarray=p.rearrangeElementsBySign(new int[]{2, 4, 5, -1, -3, -4});
+        System.out.println(Arrays.toString(newarray));
+    }
 }
