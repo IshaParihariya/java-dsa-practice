@@ -1,5 +1,5 @@
 
-package slidingwindow;
+package slidingWindowAndTwopointer;
 
 class hello
 {
