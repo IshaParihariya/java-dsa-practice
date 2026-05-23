@@ -83,6 +83,7 @@ public class ConsecutiveOnes111
 {
     public static void main(String[] args)
     {
+        // object of class
          ConsecutiveOnes111Porblem obj=new  ConsecutiveOnes111Porblem();
          int r=obj.consecutiveOnes111Porblem(new int[]{1,1,1,0,0,0,1,1,1,1,0}, 2);
          System.out.println(r);
