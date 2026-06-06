@@ -3,18 +3,6 @@
 This repository contains **Java implementations of Data Structures and Algorithms (DSA)** along with short reference notes.  
 It is created for practice, revision, and strengthening problem-solving skills in Java.
 
-## Topics Covered
-
-- Arrays  
-- ArrayList  
-- Linear Search  
-- Binary Search  
-- Sorting Algorithms  
-- Strings  
-- StringBuilder  
-- Recursion  
-- Basic DSA concepts and notes for revision  
-
 ## Repository Structure
 
 - `src/` – Java source files containing DSA problems, solutions, and notes  
