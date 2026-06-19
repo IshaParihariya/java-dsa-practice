@@ -27,6 +27,8 @@ The number 1 appears 4 times in the 6 sized array
 */
 package array.questions.easy;
 
+import java.util.HashMap;
+
 class MajorityElement_
 {
     public void majorityelement(int[] arr)
@@ -54,6 +56,59 @@ class MajorityElement_
         if(max>m)
             System.out.println(majority);
     }
+}
+//another approach added
+class SolutionME 
+{
+    public int majorityElement(int[] arr) 
+    {
+        int n=arr.length;
+        //hashmap => element and freq
+        HashMap<Integer,Integer> map=new HashMap<>();
+
+        //frquency
+        int freq=0;
+
+        //for loop
+        for(int i=0;i<arr.length;i++)
+        {
+            if(!map.containsKey(arr[i]))
+            {
+                freq=1;
+                map.put(arr[i],freq); 
+            }
+            //if it contains
+            /*
+            -> map.get(arr[i]) finds the current frequency of that element.
+            -> +1 increments it.
+            -> put() replaces the old value with the new frequency. 
+            */
+            else
+            {
+                map.put(arr[i],map.get(arr[i])+1); // note No new entry is created.
+                /* map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+
+This means:
+
+"Give me the current frequency of arr[i]; if it doesn't exist, assume it's 0, then add 1 and store it */
+            }
+
+            
+        }
+        //end of for loop
+
+        for(int key : map.keySet())
+        {
+            if(map.get(key)>(n/2))
+            {
+                return key;
+            }
+        }
+
+        return -1;
+    }
+    //end of method
+
 }
 public class MajorityElement 
 {
