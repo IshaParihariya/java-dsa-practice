@@ -1,6 +1,6 @@
 // graph representation 
 // adjency matrix 
-// adjency list
+// adjency ..
 
 package graph;
 
@@ -87,6 +87,7 @@ Each vertex stores its neighbours.
             graph.add(new ArrayList<>());
         }
          /*
+        
 0 -> []
 
 1 -> []
