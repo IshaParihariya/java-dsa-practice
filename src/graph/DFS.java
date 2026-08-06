@@ -1,4 +1,4 @@
-//nahi samjh aaya try again 
+
 
 /*
 Depth First Search (DFS)
@@ -34,6 +34,9 @@ Space	       O(V)	  O(V)
 Time	      O(V + E)	O(V + E)
 */
 package graph;
+
+import java.util.ArrayList;
+
 /*
 The Function
 public static void dfs(int node,
@@ -364,13 +367,56 @@ That's why it's called Depth First Search—it goes as deep as possible before c
 
 class DFS1
 {
-    
+    //RECURSION : 
+    // adjency list 
+    // array with info about who visited and who didnt
+    // node for which we are doing the traversing now..
+    static public void dfs(ArrayList<ArrayList<Integer>> adj,boolean[] vis,int node)
+    {
+        vis[node]=true; // the node is visited
+        System.out.print(node + " "); // print
+        //now go to the adj list and get the neighbours
+        for(Integer it:adj.get(node))
+        {
+            //if node isn't visited 
+            if(!vis[it])
+            {
+                //recursion to go in depth of each neighbouur
+            dfs(adj,vis,it);
+            }
+        }
+    }
 }
 public class DFS 
 {
    
     public static void main(String[] args)
     {
+        int V=5;
         
+        // adj list
+        ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
+        
+        for(int i=0;i<V;i++)
+        {
+            adj.add(new ArrayList<>());
+        }   
+         // Add edges (Undirected Graph)
+        adj.get(0).add(1);
+        adj.get(1).add(0);
+
+        adj.get(0).add(2);
+        adj.get(2).add(0);
+
+        adj.get(1).add(3);
+        adj.get(3).add(1);
+
+        adj.get(1).add(4);
+        adj.get(4).add(1);
+
+        boolean[] vis= new boolean[V];
+
+        System.out.print("DFS Traversal: ");
+       DFS1.dfs(adj, vis, 0);
     }
 }
