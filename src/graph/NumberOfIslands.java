@@ -45,6 +45,7 @@ import java.util.Queue;
 
 class Solution 
 {
+    // with bfs
     public void bfs(char[][] grid, int startRow,int startCol  ,boolean[][] vis)
     {
         //here we will see all neighbours and will note them as visited
@@ -107,6 +108,34 @@ k = 3 → Right
         }
 
     }
+
+    // with dfs 
+    // recursion
+    public void dfs(char[][] grid,int startRow,int startCol,boolean[][] vis)
+    {
+        vis[startRow][startCol]=true;
+
+        // four directions again bro..
+        int[] dr={-1,1,0,0};
+        int[] dc={0,0,-1,1};
+
+        for(int k=0;k<4;k++)
+        {
+             int newRow = startRow + dr[k];
+        int newCol = startCol + dc[k];
+
+             if(newRow>=0 && newCol>=0 && newRow<grid.length && newCol<grid[0].length) // exception 
+             {
+                //now check if visited or not
+            if(grid[newRow][newCol]=='1' && !vis[newRow][newCol])
+            {
+               //recursion
+               dfs(grid,newRow,newCol,vis);
+            }
+             }
+        }
+    }
+
     public int numIslands(char[][] grid) 
     {
         //lets try with bfs
@@ -125,7 +154,8 @@ k = 3 → Right
                     startRow=i;
                     startCol=j;
                     // do dfs or bfs for it
-                    bfs(grid , startRow, startCol, vis);
+                    // bfs(grid , startRow, startCol, vis); // with bfs
+                     bfs(grid , startRow, startCol, vis); // with dfs recursion
                 }
             }
         }
