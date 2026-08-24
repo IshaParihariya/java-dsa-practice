@@ -1,6 +1,6 @@
 
 //easy one!
-class SolutionTwoSum
+class SolutionTwoSum1
 {
     public int[] twoSum(int[] nums, int target)
     {
@@ -25,7 +25,7 @@ class SolutionTwoSum
             }
             else
             {
-                //dont store
+                //dont store...
             }
             //keep increasing
             r++;
