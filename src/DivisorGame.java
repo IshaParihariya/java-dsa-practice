@@ -1,7 +1,7 @@
  class Solution {
     public boolean divisorGame(int n) {
 
-        //chatgpt showed me the pattern thing 
+        //chatgpt showed me the pattern thing ..
         // here that n is odd the alice losses and n is even then alice wins so we can directly do..
         // return n%2==0; 
         //but here i solved it as per me..
