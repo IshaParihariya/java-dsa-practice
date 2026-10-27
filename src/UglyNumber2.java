@@ -1,3 +1,5 @@
+//easier one ugly number has been solved already..
+
 
 import java.util.HashSet;
 import java.util.PriorityQueue;
