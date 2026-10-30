@@ -6,6 +6,28 @@ class Solution
 {
     public long countSubarrays(int[] nums, int minK, int maxK) 
     {
+        //TLE FOR THIS ONE
+        
+        // long result=0;
+
+        // for(int l=0;l<nums.length;l++)
+        // {
+        //     int max=Integer.MIN_VALUE; //taking these as defaults
+        //     int min=Integer.MAX_VALUE;
+            
+        //     for(int r=l;r<nums.length;r++)
+        //     {
+        //         max=Math.max(max,nums[r]);
+        //         min=Math.min(min,nums[r]);
+
+        //         if(max==maxK && min==minK)
+        //         {
+        //             result++;
+        //         }
+        //     }
+        // }
+
+        // return result;
 
 
 
