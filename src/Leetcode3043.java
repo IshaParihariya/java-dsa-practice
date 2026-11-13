@@ -32,6 +32,14 @@ class Solution
                 //arr2 we need to store
                 //lets store ALL PREFIXES
                 int divisor=1;
+                
+                 /**
+        we stroing from larger to smaller so..we can break at some condition later on..
+12345
+1234
+123
+12
+1 */
 
                 while(divisor<=arr2[i])
                 {
@@ -87,6 +95,19 @@ class Solution
                 if(set.contains(prefix))
             {
                 maxLength=Math.max(maxLength, Integer.toString(prefix).length());
+                 /**
+        we stroing from larger to smaller so..we can break at some condition later on..
+12345
+1234
+123
+12
+1 */
+                 //here we using it 
+                 //THIS IMPROVED THE EFFICIENCY QUITE A LOT
+                
+                break;
+                 //as we are starting from larger one 
+                //so this will be the largest on here 
             }
 
                 divisor=divisor*10;
@@ -113,6 +134,10 @@ class Solution
                 if(set.contains(prefix))
             {
                 maxLength=Math.max(maxLength, Integer.toString(prefix).length());
+                
+                break;
+                 //as we are starting from larger one 
+                //so this will be the largest on here 
             }
 
                 divisor=divisor*10;
