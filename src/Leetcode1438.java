@@ -1,6 +1,7 @@
 class Solution 
 {
     //will try this tom
+    //here i can go for sliding window for optimisation later on.
     public int longestSubarray(int[] nums, int limit) 
     {
         //kadane is used for longest sum in subarrays all possible ones
