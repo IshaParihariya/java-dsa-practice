@@ -1,5 +1,6 @@
 class Solution 
 {
+    //increasing and decreasing slopes are checked 
     public int findPeakElement(int[] nums) 
     {
        //here what we are seeing is if mid < mid+1 -> means increasing slop
