@@ -6,6 +6,12 @@ class Solution
 
         int[] result=new int[arr.length];
 
+        //this condition for length 1 fs no pairs
+        if(n==1)
+        {
+            return result;
+        }
+
         int pair=0;
 
         for(int i=0;i<arr.length;i++)
@@ -17,7 +23,10 @@ class Solution
             //lets try to get done witht he old pairs
             if(index-1>=0 && colors[index-1]!=0 && colors[index-1]==colors[index])
             {
-                pair--;
+                pair--; //okay before actuall making 
+                //changes check in the right and left and comare with the current color
+                //if it left ryt are same then 2 pairs gonn be breakinh 
+                //else only one and hence we wrote this different for left and diff for ryt condition
             }
 
             if(index+1<n && colors[index+1]!=0 && colors[index+1]==colors[index])
