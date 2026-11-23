@@ -2,6 +2,7 @@ class Solution
 {
     public int[] colorTheArray(int n, int[][] arr) 
     {
+        //this also try again
         int[] colors=new int[n];
 
         int[] result=new int[arr.length];
