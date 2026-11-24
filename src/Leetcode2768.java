@@ -4,7 +4,7 @@ class Solution
     //try with multiple directions 
     //left right up down
     //in all possible four directions broo
-    //try again
+    //try again...
     public long[] countBlackBlocks(int m, int n, int[][] coordinates) 
     {
         //there are m-1 * n-1 possible 2 * 2 blocks
