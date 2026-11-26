@@ -2,7 +2,7 @@ class Solution
 {
     public int countMatchingSubarrays(int[] nums, int[] pattern) 
     {
-        //brute force first
+        //brute force first..
 
         int m=pattern.length;
 
