@@ -10,7 +10,7 @@ class Solution
         //there are m-1 * n-1 possible 2 * 2 blocks
 
         int blocks=(m-1)*(n-1); //these are the total number of blocks
-
+//futher okay letsee
         
     }
 }
